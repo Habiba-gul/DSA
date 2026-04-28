@@ -10,7 +10,7 @@ class Stack {
     }
     public void push(int value) {
         if (top == size - 1) {
-            System.out.println("Stack is full! Cannot push " + value);
+            System.out.println("Stack is fullCannot push " + value);
         } else {
             top++;
             stack[top] = value;
@@ -18,7 +18,7 @@ class Stack {
     }
     public int pop() {
         if (isEmpty()) {
-            System.out.println("Stack is empty! Cannot pop");
+            System.out.println("Stack is empty Cannt pop");
             return -1;
         }
         int value = stack[top];
@@ -54,7 +54,7 @@ public class Question1 {
         System.out.println("Stack after pushing 1 to 10:");
         s.display();
 
-        System.out.println("\nPopping all elements one by one:");
+        System.out.println("\n Popp all elements one by one:");
         while (!s.isEmpty()) {
             int deleted = s.pop();        
             System.out.println("Deleted: " + deleted);
